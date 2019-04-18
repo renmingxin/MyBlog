@@ -48,7 +48,6 @@ export default {
                 width: 65%;
             }
             &-right{
-                border: 1px solid red;
                 width: 33%;
             }
         }

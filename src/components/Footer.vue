@@ -1,26 +1,54 @@
 <template>
-	<div class="container">
-		底部
-	</div>
+  <div class="container">
+    <ul class="contatner-ul">
+      <li v-for="(item,index) in msg" :key="index">{{item.title}}</li>
+    </ul>
+  </div>
 </template>
 
-<script>1
+<script>
+1;
 export default {
-  name: 'HelloWorld',
-  data () {
+  data() {
     return {
-      msg: 'Welcome to Your Vue.js App'
-    }
+      msg: [
+        { title: "C/C++" },
+        { title: "Java" },
+        { title: "C#" },
+        { title: "javaScript" },
+        { title: "C/C++" },
+        { title: "Java" },
+        { title: "C#" },
+        { title: "javaScript" },
+        { title: "C/C++" },
+        { title: "Java" },
+        { title: "C#" },
+        { title: "javaScript" }
+      ]
+    };
   }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="less" scoped>
 	.container {
-    height: 60px;
-    width: 100%;
-		background: black;
+		padding: 20px 0;
+		background: #111;
 		color: white;
+		ul{
+			width: 80%;
+			margin: 0 auto;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			li{
+				cursor: pointer;
+			}
+			li:hover{
+				opacity: .8;
+			}
+		}
 	}
 </style>
