@@ -18,10 +18,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 	.container {
-        position: fixed;
-        bottom: 0;
-        height: 60px;
-        width: 100%;
+    height: 60px;
+    width: 100%;
 		background: black;
 		color: white;
 	}

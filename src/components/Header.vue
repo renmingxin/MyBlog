@@ -2,8 +2,8 @@
 	<div class="container">
 		<div class="main">
 			<ul class="main-left">
-				<router-link tag="li" to="/">欢迎**来访</router-link>
-				<router-link tag="li" to="/">首页</router-link>
+				<li>欢迎**来访</li>
+				<router-link tag="li" to="/forum">首页</router-link>
 				<router-link tag="li" to="/map">地图</router-link>
 				<router-link tag="li" to="/about">关于</router-link>
 				<router-link tag="li" to="/message">留言</router-link>
@@ -16,7 +16,7 @@
 	</div>
 </template>
 
-<script>1
+<script>
 export default {
   name: 'HelloWorld',
   data () {
@@ -43,22 +43,24 @@ export default {
 	.main{
 		display: flex;
 		flex-direction: row;
-		border: 1px solid red;
 		align-items: center;
 		justify-content: space-between;
-		width: 60%;
+		width: 1170px;
 		&-left{
 			width: 500px;
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
-			// align-items: center;
 			li{
 				cursor: pointer;
 			}
 			li:hover{
 				opacity: .8;
 			}
+			.router-link-active {
+				border-bottom: 2px solid white;
+			}
+			
 		}
 	}
 </style>

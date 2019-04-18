@@ -10,6 +10,7 @@ export default new Router({
 			name: 'main',
 			component: () => import('@/page/Main'),
 			children: [
+				{ path: 'forum', name: 'forum', component: () => import('@/page/Forum') },
 				{ path: 'map', name: 'map', component: () => import('@/page/Map') },
 				{ path: 'about', name: 'about', component: () => import('@/page/About') },
 				{ path: 'message', name: 'message', component: () => import('@/page/Message') },
