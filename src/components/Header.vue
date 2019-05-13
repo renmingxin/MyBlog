@@ -5,6 +5,7 @@
 				<li>欢迎**来访</li>
 				<router-link tag="li" to="/forum">首页</router-link>
 				<router-link tag="li" to="/map">地图</router-link>
+				<!-- <li><a href="/sitemap.html">地图</a></li> -->
 				<router-link tag="li" to="/about">关于</router-link>
 				<router-link tag="li" to="/message">留言</router-link>
 			</ul>

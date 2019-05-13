@@ -7,7 +7,6 @@
 </template>
 
 <script>
-1;
 export default {
   data() {
     return {

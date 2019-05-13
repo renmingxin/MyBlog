@@ -9,6 +9,7 @@ export default new Router({
 			path: '/',
 			name: 'main',
 			component: () => import('@/page/Main'),
+			redirect: '/forum',
 			children: [
 				{ path: 'forum', name: 'forum', component: () => import('@/page/Forum') },
 				{ path: 'map', name: 'map', component: () => import('@/page/Map') },
