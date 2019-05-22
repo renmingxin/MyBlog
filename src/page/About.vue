@@ -1,6 +1,7 @@
 <template>
     <div class="main">
         关于
+        <a href="./static/aaa.html">AAA</a>
     </div>
 </template>
 
